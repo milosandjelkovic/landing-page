@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FCC - Landing page</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<header id="header">
+		<nav id="nav-bar">
+			<ul>
+				<li><a class="nav-link" href="#hero-content">Home</a></li>
+				<li><a class="nav-link" href="#email">Tickets</a></li>
+				<li><a class="nav-link" href="#fightcard">Fightcard</a></li>
+			</ul>
+		</nav>
+		
+		<span id="image-container">
+			<img id="header-img" src="https://www.dropbox.com/s/m3c5zur4rbuawww/pride-fc-logo.png?raw=1">
+		</span>
+		
+		<nav id="nav-bar-real">
+			<ul>
+				<li><a class="nav-link default" href="#hero-content">Home</a></li>
+				<li><a class="nav-link" href="#email">Tickets</a></li>
+				<li><a class="nav-link" href="#fightcard">Fightcard</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section id="hero-content">
+		
+		<section class="main-event">
+			<h1>PRIDE FC 33</h1>
+			<hr>
+			
+			<section class="two-fighters">
+				
+				<section class="challenger">
+					<img src="https://www.dropbox.com/s/y9sh1ufdx8tq721/henderson-bw.jpg?raw=1" alt="">
+					<p>Dan Henderson</p>
+				</section>
+				
+				<section class="vs">
+					<span>VS</span>
+					<p>-</p>
+				</section>
+
+				<section class="challenged">
+					<img src="https://www.dropbox.com/s/u72htn9p9z28cs8/silva-bw.png?raw=1" alt="">
+					<p>Vanderley Silva</p>
+				</section>
+
+			</section>
+
+			<section class="info">
+				<p>February 24, 2007</p>
+				<p>Thomas & Mack Center, Las Vegas, Nevada</p>
+			</section>
+
+		</section>
+		
+		<section id="video-container">
+		
+			<h2>Watch on PPV</h2>
+			<hr>
+			
+			<video id="video" width="100%" controls poster="https://www.dropbox.com/s/aghe44mamybbvay/pride-ring.jpeg?raw=1">
+				<source src="https://www.dropbox.com/s/61llky8vvh4am0u/pride-fc.mp4?raw=1" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+			
+		</section>
+		
+	</section>
+
+	<section id="email-area">
+	
+		<h2>Get your tickets</h2>
+		<hr>
+		<form id="form" action="https://www.freecodecamp.com/email-submit">
+			<input name="email" id="email" type="email" placeholder="Enter your email address" required />
+			<input id="submit" type="submit" value="Buy Tickets" />
+		</form>
+		
+	</section>
+
+	<section id="fightcard">
+		<h2>Fightcard</h2>
+		<hr>
+		<table>
+			<tr>
+				<td>Den Henderson</td>
+				<td>VS</td>
+				<td>Vanderley Silva</td>
+			</tr>
+			<tr>
+				<td>Nick Diaz</td>
+				<td>VS</td>
+				<td>Takanori Gomi</td>
+			</tr>
+			<tr>
+				<td>Mauricio Rua</td>
+				<td>VS</td>
+				<td>Alistar Overeem</td>
+			</tr>
+			<tr>
+				<td>Hayato Sakurai</td>
+				<td>VS</td>
+				<td>Mac Danzig</td>
+			</tr>
+			<tr>
+				<td>R. T. Sokoudjou</td>
+				<td>VS</td>
+				<td>Rogerio Nogueira</td>
+			</tr>
+			<tr>
+				<td>Sergey Kharitonov</td>
+				<td>VS</td>
+				<td>Mike Russow</td>
+			</tr>
+			<tr>
+				<td>Frank Trigg</td>
+				<td>VS</td>
+				<td>Kazuo Misaki</td>
+			</tr>
+			<tr>
+				<td>James Lee</td>
+				<td>VS</td>
+				<td>Travis Viuff</td>
+			</tr>
+			<tr>
+				<td>Joachim Hansen</td>
+				<td>VS</td>
+				<td>Jason Ireland</td>
+			</tr>
+		</table>
+	</section>
+		
+	<footer>
+		<p>Design by Milos Andjelkovic</p>
+	</footer>
+		
+	<script src="script.js"></script>
+</body>
+</html>
