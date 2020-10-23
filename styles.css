@@ -1,0 +1,336 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-width: 100%;
+	background: #dbe2f3;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #7a829e;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	padding: 1em 3em;
+	background: white;
+}
+
+header img {
+	width: 6em;
+}
+
+span {
+	flex-basis: 20%;
+}
+
+nav {
+	flex-basis: 80%;
+}
+
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+}
+
+nav ul li {
+	margin-right: 2em;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+a:link {
+	color: #7a829e;
+	text-decoration: none;
+	padding-bottom: .3em;
+}
+
+a:visited {
+	color: #505765;
+}
+
+a:hover{
+	border-bottom: 6px solid #ef1922;
+}
+
+a:active {
+	color: #ef1922;
+}
+
+.default {
+	border-bottom: 6px solid #ef1922;
+}
+
+h2 {
+	font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+hr {
+	margin: 0;
+	margin-bottom: 1em;
+	padding: 0;
+	width: 2em;
+	height: 6px;
+	background: #ef1922;
+	border: none;
+}
+
+#hero-content {
+	display: flex;
+}
+
+hr {
+	margin-bottom: 3em;
+}
+
+h2 {
+	color: white;
+}
+
+.main-event {
+	flex-basis: 50%;
+	padding: 3em;
+	color: #9DA5BD;
+	background: #1E1F22;
+	border-right: 1px solid #17181a;
+	background-image: url("https://www.dropbox.com/s/bvsrs90l6si4l6d/mass.jpg?raw=1");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-fighters {
+	display: flex;
+}
+
+.fighter-one, .fighter-two {
+	display: flex;
+	flex-basis: 40%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.fighter-one img, .fighter-two img {
+	padding: 6px;
+	border: 7px solid #ef1922;
+	border-radius: 50%;
+	width: 8em;
+	height: 8em;
+}
+
+.fighter-one p, .fighter-two p {
+	padding-top: .6em;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.vs-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 20%;
+}
+
+.vs-text p {
+	margin-bottom: 1.2em;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.event-info {
+	padding-top: 5em;
+	width: 100%;
+}
+
+.event-info p {
+	margin-bottom: .5em;
+	text-align: center;
+}
+
+.video-container {
+	flex-basis: 50%;
+	padding: 3em;
+	background: #1a1b1e;
+}
+
+video {
+	width: 100%;
+	border: 8px solid white;
+}
+
+#cta-area {
+	padding: 3em;
+	background: #1b1c1e;
+	border-top: 1px solid #17181a;
+	border-bottom: 1px solid #17181a;
+}
+
+form {
+	display: flex;
+}
+
+.email {
+	flex-basis: 80%;
+	padding: 1.2em 0 1.2em 1.2em;
+	border: 1px solid #17181a;
+	background: #24272D;
+}
+
+::placeholder {
+	text-indent: 2em;
+	color: #565e6e;
+	font-family: Roboto;
+	font-size: 1.1em;
+}
+
+.submit {
+	flex-basis: 20%;
+	background: #ef1922;
+	border: none;
+	font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+}
+
+#fightcard {
+	margin: 0 auto;
+	padding: 4em 0;
+	width: 60%;
+}
+
+#fightcard h2 {
+	color: #24272D;
+}
+	
+table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0 8px;
+	font-size: 1em;
+}
+
+tbody {
+	margin: 0;
+	padding: 0;
+}
+
+tr {
+	border-collapse: collapse;
+	background: white;
+}
+
+tr:first-child {
+	border-right: none;
+}
+
+tr :nth-child(even) {
+	width: 10%;
+	border-left: none;
+	border-right: none;
+	font-weight: bold;
+	background: #9aa4ba;
+	color: white;
+}
+
+tr:last-child {
+	border-left: none;
+}
+
+td {
+	flex-basis: 44%;
+	margin: 1em;
+	padding: 1.5em 1em;
+	border: 1px solid #c1cde9;
+	text-align: center;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	padding: 2em 3em;
+	background: white;
+	border: 1px solid #c1cde9;
+}
+
+footer p {
+	flex-basis: 100%;
+	text-align: center;
+}
+
+@media (max-width: 800px) {
+	header {
+		flex-direction: column;
+		padding: 1em 0 0 0;
+	}
+	
+	span {
+		flex-basis: 100%;
+		margin-bottom: 1em;
+	}
+	
+	nav {
+		width: 100%;
+	}
+	
+	nav ul {
+		justify-content: center;
+		margin-bottom: 1em;
+		padding-left: 0;
+	}
+	
+	a:hover{
+		border-top: 3px solid #ef1922;
+		padding-top: .4em;
+		border-bottom: none;
+	}
+
+	.default {
+		text-decoration: none;
+		padding-top: .4em;
+		border-top: 3px solid #ef1922;
+		border-bottom: none;
+	}
+	
+	#hero-content {
+		flex-direction: column;
+	}
+	
+	.main-event {
+		padding: 2em;
+	}
+	
+	.video-container {
+		padding: 2em;
+	}
+	
+	#cta-area {
+		padding: 2em;
+	}
+	
+	form {
+		flex-direction: column;
+	}
+	
+	.submit {
+		padding: .8em 0;
+		margin-top: 1em;
+	}
+	
+	#fightcard {
+		padding: 2em;
+		width: 100%;
+	}
+}
