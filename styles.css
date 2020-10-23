@@ -312,6 +312,11 @@ footer p {
 		padding: 2em;
 	}
 	
+	.fighter-one img, .fighter-two img {
+		width: 5em;
+		height: 5em;
+	}
+	
 	.video-container {
 		padding: 2em;
 	}
