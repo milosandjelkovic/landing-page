@@ -230,6 +230,7 @@ tbody {
 }
 
 tr {
+   width: 45%;
 	border-collapse: collapse;
 	background: white;
 }
