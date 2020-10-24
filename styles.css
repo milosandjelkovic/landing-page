@@ -144,6 +144,7 @@ h2 {
 
 .vs-text p {
 	margin-bottom: 1.2em;
+   padding: 0 1em;
 	font-size: 2em;
 	font-weight: bold;
 }
@@ -251,8 +252,6 @@ tr:last-child {
 }
 
 td {
-	flex-basis: 44%;
-	margin: 1em;
 	padding: 1.5em 1em;
 	border: 1px solid #c1cde9;
 	text-align: center;
@@ -271,7 +270,7 @@ footer p {
 	text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 720px) {
 	header {
 		flex-direction: column;
 		padding: 1em 0 0 0;
@@ -304,6 +303,10 @@ footer p {
 		border-top: 3px solid #ef1922;
 		border-bottom: none;
 	}
+
+   hr {
+      margin-bottom: 2em;
+   }
 	
 	#hero-content {
 		flex-direction: column;
@@ -316,8 +319,22 @@ footer p {
 	.fighter-one img, .fighter-two img {
 		width: 5em;
 		height: 5em;
+      border-width: 4px;
 	}
+
+   .fighter-one p, .fighter-two p {
+      font-size: 1em;
+   }
+
+   .vs-text p {
+      font-size: 1.6em;
+   }
 	
+   .event-info {
+      padding-top: 4em;
+      font-size: .9em;
+   }
+
 	.video-container {
 		padding: 2em;
 	}
