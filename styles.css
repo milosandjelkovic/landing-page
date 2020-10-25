@@ -208,10 +208,9 @@ form {
 }
 
 #fightcard {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 4em;
+	margin: 0 auto;
+	padding: 4em 0;
+	width: 60%;
 }
 
 #fightcard h2 {
@@ -219,9 +218,8 @@ form {
 }
 	
 table {
-	display: flex;
-	justify-content: center;
-	flex-basis: 60%;
+	display: block;
+	margin: 0 auto;
 	font-size: 1em;
 }
 
@@ -235,8 +233,9 @@ tbody {
 tr {
 	display: flex;
 	flex-basis: 100%;
+	justify-content: center;
 	align-items: center;
-	margin-bottom: .5em;
+	margin-bottom: .8em;
 	background: white;
 	border: 1px solid #c1cde9;
 }
