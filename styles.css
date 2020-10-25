@@ -220,12 +220,14 @@ form {
 	
 table {
 	display: flex;
+	justify-content: center;
 	flex-basis: 60%;
 	font-size: 1em;
 }
 
 tbody {
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
 	flex-basis: 100%;
 }
@@ -233,6 +235,7 @@ tbody {
 tr {
 	display: flex;
 	flex-basis: 100%;
+	align-items: center;
 	margin-bottom: .5em;
 	background: white;
 	border: 1px solid #c1cde9;
