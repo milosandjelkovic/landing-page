@@ -208,9 +208,10 @@ form {
 }
 
 #fightcard {
-	margin: 0 auto;
-	padding: 4em 0;
-	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 4em;
 }
 
 #fightcard h2 {
@@ -218,44 +219,40 @@ form {
 }
 	
 table {
-	width: 100%;
-	border-collapse: separate;
-	border-spacing: 0 8px;
+	display: flex;
+	flex-basis: 60%;
 	font-size: 1em;
 }
 
 tbody {
-	margin: 0;
-	padding: 0;
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
 }
 
 tr {
-   width: 45%;
-	border-collapse: collapse;
+	display: flex;
+	flex-basis: 100%;
+	margin-bottom: .5em;
 	background: white;
-}
-
-tr:first-child {
-	border-right: none;
-}
-
-tr :nth-child(even) {
-	width: 10%;
-	border-left: none;
-	border-right: none;
-	font-weight: bold;
-	background: #9aa4ba;
-	color: white;
+	border: 1px solid #c1cde9;
 }
 
 tr:last-child {
-	border-left: none;
+	margin-bottom: 0;
 }
 
 td {
+	flex-basis: 45%;
 	padding: 1.5em 1em;
-	border: 1px solid #c1cde9;
 	text-align: center;
+}
+
+td:nth-child(even) {
+	flex-basis: 10%;
+	font-weight: bold;
+	color: white;
+	background: #9aa4ba;
 }
 
 footer {
