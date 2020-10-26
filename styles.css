@@ -9,7 +9,7 @@ html {
 }
 
 body {
-	min-width: 100%;
+	width: 100%;
 	background: #dbe2f3;
 	font-family: Roboto, Arial, Helvetica, sans-serif;
 	font-size: 1em;
@@ -208,24 +208,38 @@ form {
 }
 
 #fightcard {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 4em;
+}
+
+.fc-flex-wrapper {
 	margin: 0 auto;
-	padding: 4em 0;
-	width: 60%;
+	width: 70%;
+}
+
+.fc-flex-wrapper h2 {
+	flex-basis: 70%;
 }
 
 #fightcard h2 {
 	color: #24272D;
 }
+
+.table-flex-wrapper {
+	display: flex;
+	justify-content: center;
+}
 	
 table {
-	display: block;
-	margin: 0 auto;
+	display: flex;
+	flex-basis: 70%;
 	font-size: 1em;
 }
 
 tbody {
 	display: flex;
-	justify-content: center;
 	flex-direction: column;
 	flex-basis: 100%;
 }
@@ -234,7 +248,6 @@ tr {
 	display: flex;
 	flex-basis: 100%;
 	justify-content: center;
-	align-items: center;
 	margin-bottom: .8em;
 	background: white;
 	border: 1px solid #c1cde9;
@@ -245,8 +258,8 @@ tr:last-child {
 }
 
 td {
-	flex-basis: 45%;
 	padding: 1.5em 1em;
+	flex-basis: 45%;
 	text-align: center;
 }
 
@@ -354,6 +367,17 @@ footer p {
 	
 	#fightcard {
 		padding: 2em;
+	}
+	
+	#fightcard h2 {
 		width: 100%;
+	}
+	
+	.fc-flex-wrapper {
+		width: 100%;
+	}
+	
+	table {
+		flex-basis: 100%;
 	}
 }
